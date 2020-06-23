@@ -1,10 +1,18 @@
 <!doctype html>
 <html lang="en">
+
+<ul>
+  <li><a href="producten.php">Procucten</a></li>
+</ul>
+
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Title</title>
+    <title>Albert Heijn Online Bestellen</title>
+    <?php
+    include 'includes/functions.php';
+    ?>
   </head>
     <form action="index.php" method="get"><!-- dit laten staan! -->
 
@@ -15,5 +23,7 @@
     <p>Het datatype van de waarde: <?php getInput(); ?> is </p>
 
     </form><!-- dit laten staan! -->
+
+
   </body>
 </html>

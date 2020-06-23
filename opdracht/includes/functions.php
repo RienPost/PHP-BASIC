@@ -22,7 +22,37 @@ function getAmount()
 function getAge()
 {
     $leeftijd = $_GET['leeftijd'] ?? 'vul een leeftijd in!';
-    echo $leeftijd;
-}
+    $leeftijd = " ";
+     
+    }
+
+    function korting(){
+    $leeftijd = $_GET['leeftijd'] ?? 'vul een leeftijd in!';
+    switch($leeftijd){
+        case $leeftijd <= 15: 
+        echo "1";
+        break;
+
+        case 16:
+        echo "€0,16";
+        break;
+
+        case 17:
+        echo "€0,17";
+        break;
+
+        case 18:
+        echo "€0,18";
+        break;
+
+        case 19:
+        echo "€0,19";
+        break;
+
+        default:
+        echo "€0.00";
+
+    }
+}   
 
 ?>
